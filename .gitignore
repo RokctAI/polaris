@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.log
+node_modules/
+dist/
+build/
+.env
+.venv/
+.DS_Store
+
+# Protocol working state — installed by .rokct/initiate.py, not committed.
+.rokct/skills/
+.rokct/tmp/
