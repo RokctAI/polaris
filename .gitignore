@@ -72,10 +72,8 @@ key.properties
 
 # Local machine config (also covered by android/.gitignore).
 local.properties
-# ios/, analysis_options.yaml, flutter_native_splash.yaml and pubspec.yaml
-# are listed here as in supacharge but stay TRACKED there and here: the
-# rules only hide new untracked files under them. build.yml's detect step
-# needs pubspec.yaml on checkout.
+# ios/, analysis_options.yaml and flutter_native_splash.yaml are compose
+# output: ignored and untracked so every compose recreates them.
 ios/
 # assets/ is deliberately NOT ignored: installed assets (splash/login
 # backgrounds, team renders, ...) are tracked so the shell repo owns and can
@@ -85,6 +83,9 @@ ios/
 /analysis_options.yaml
 /flutter_native_splash.yaml
 /pubspec.yaml
+# pubspec.yaml is the one exception that stays tracked: build.yml's detect
+# step checks it exists on a fresh checkout, before any compose, to pick
+# the Flutter pipeline.
 
 # Python bytecode from running the .rokct compose/install scripts.
 .rokct/__pycache__/
@@ -102,6 +103,3 @@ __pycache__/
 *.log
 .venv/
 .DS_Store
-# CocoaPods writes this on every pod install; its SPEC CHECKSUMS trip
-# Gitleaks generic-api-key (false positive). Not tracked here.
-ios/Podfile.lock
