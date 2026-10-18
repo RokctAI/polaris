@@ -102,3 +102,6 @@ __pycache__/
 *.log
 .venv/
 .DS_Store
+# CocoaPods writes this on every pod install; its SPEC CHECKSUMS trip
+# Gitleaks generic-api-key (false positive). Not tracked here.
+ios/Podfile.lock
