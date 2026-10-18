@@ -1,0 +1,87 @@
+name: Auto Release (Weekly)
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}-release
+  # Never auto-cancel a release run: cancelling mid-publish can leave partial
+  # releases (half-uploaded assets, dangling tags).
+  cancel-in-progress: false
+
+on:
+  workflow_dispatch:
+    inputs:
+      backfill_ai_notes_cutoff_version:
+        type: string
+        default: ""
+        description: "Regenerate AI release notes starting from this version (use 'all' for full history)"
+
+      node-version:
+        type: string
+        default: '24'
+      python-version:
+        type: string
+        default: '3.14'
+      mariadb-version:
+        type: string
+        default: '10.6'
+      postgres-version:
+        type: string
+        default: '15'
+      db-type:
+        type: string
+        default: 'mariadb'
+      flutter-channel:
+        type: string
+        default: 'stable'
+      java-version:
+        type: string
+        default: '17'
+      version_format:
+        type: string
+        default: '##.##.##'
+        description: "Format for version bumping (e.g. ##.##.## or ##.##.#)"
+
+jobs:
+  release:
+    permissions: write-all
+    uses: RokctAI/shared-workflows/.github/workflows/universal-pipeline.yml@8ee844e34904d3a6de4c2fbea7e9a52491699c40 # shared-workflows main after #528 (windows installer)
+    with:
+      backfill_ai_notes_cutoff_version: ${{ inputs.backfill_ai_notes_cutoff_version }}
+      project_type: 'flutter'
+      app-type: 'polaris'
+      # Dogfooding: Use the new Weekly Strategy
+      release_strategy: 'weekly'
+
+      # RC Cleanup: Delete RC releases/tags after promotion to stable
+      cleanup_rc_releases: true
+      
+      # One-time cleanup: Set a cutoff date (YYYY-MM-DD) to run cleanup once if past this date
+      # After cleanup runs once, a marker file is created and cleanup won't run again
+      # Example: one_time_cleanup_cutoff_date: '2026-02-01'
+      one_time_cleanup_cutoff_date: '2026-01-30'
+      
+      # Brain Endpoint 
+      brain_endpoint: https://platform.rokct.ai/api/v1/method/rokct.platform.api
+
+      # Build APK
+      build_android: true
+      # Build Windows desktop app and attach it to releases (this repo's committed
+      # windows/ runner is kept in sync by desktop_sdk at compose time)
+      build_windows: true
+      # Ship the Windows release as a single Inno Setup installer
+      # (polaris-windows-setup-v<version>.exe) instead of the zip folder.
+      windows_installer: true
+      app_display_name: 'Polaris'
+      # Opt into Huawei Mobile Services wiring (hms_sdk in composer.json). Gracefully
+      # skips to a GMS-only build until agconnect-services.json exists in Occultation.
+      build_hms: true
+      # Environment configuration
+      node-version: ${{ inputs.node-version || '24' }}
+      python-version: ${{ inputs.python-version || '3.14' }}
+      mariadb-version: ${{ inputs.mariadb-version || '10.6' }}
+      postgres-version: ${{ inputs.postgres-version || '15' }}
+      db-type: ${{ inputs.db-type || 'mariadb' }}
+      flutter-channel: ${{ inputs.flutter-channel || 'stable' }}
+      flutter-version: '3.44.9'
+      java-version: ${{ inputs.java-version || '17' }}
+      version_format: ${{ inputs.version_format || '##.##.##' }}
+    secrets: inherit
