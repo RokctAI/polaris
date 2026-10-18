@@ -82,10 +82,9 @@ ios/
 # survive recompose.
 /analysis_options.yaml
 /flutter_native_splash.yaml
-/pubspec.yaml
-# pubspec.yaml is the one exception that stays tracked: build.yml's detect
-# step checks it exists on a fresh checkout, before any compose, to pick
-# the Flutter pipeline.
+# pubspec.yaml is not ignored (only pubspec.lock is): it stays tracked
+# because build.yml's detect step checks it exists on a fresh checkout,
+# before any compose, to pick the Flutter pipeline.
 
 # Python bytecode from running the .rokct compose/install scripts.
 .rokct/__pycache__/
