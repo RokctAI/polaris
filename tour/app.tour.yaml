@@ -22,8 +22,8 @@ tour:
   # Splash settles onto the welcome screen.
   - step:
       key: welcome
-      title: "Welcome to Polaris"
-      caption: "Polaris is a *loan you can understand* - sign in to get started."
+      title: "Welcome to {app_name}"
+      caption: "{app_name} is a *loan you can understand* - sign in to get started."
       action: wait
       settle: 12
   # auth_sdk captures the auth sheets, then signs in as the demo borrower.
