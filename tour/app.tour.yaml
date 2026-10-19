@@ -1,0 +1,33 @@
+# Guided-tour manifest for the Polaris app shell.
+#
+# Brand wording lives here; the SDK fragments (auth_sdk and polaris_sdk) stay
+# brand-neutral and receive {app_name}/{app_tagline} by substitution at merge
+# time. The merge, capture and assembly run in CI via RokctAI/shared-workflows
+# universal-guided-tour.yml; format documentation is in that repo at
+# scripts/tour/README.md.
+#
+# Demo builds answer api.user.login from auth_sdk's fixture, keyed on the
+# email. customer@demo.rokct.ai signs in the customer role. Polaris has no
+# role gate, so any role reaches the borrower home.
+app:
+  name: Polaris
+  tagline: Loans that are clear from the first step
+video:
+  hook: "Need a loan? See how simple it is."
+  offer: "Apply in minutes."
+setup:
+  # Read by auth_sdk's demo_sign_in step.
+  demo_email: customer@demo.rokct.ai
+tour:
+  # Splash settles onto the welcome screen.
+  - step:
+      key: welcome
+      title: "Welcome to Polaris"
+      caption: "Polaris is a *loan you can understand* - sign in to get started."
+      action: wait
+      settle: 12
+  # auth_sdk captures the auth sheets, then signs in as the demo borrower.
+  - fragment: auth
+  # The borrower home is polaris_sdk's loan screen. Its route initializes
+  # PolarisSDK, so the application wizard steps below can open it.
+  - fragment: polaris
