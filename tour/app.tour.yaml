@@ -7,8 +7,8 @@
 # scripts/tour/README.md.
 #
 # Demo builds answer api.user.login from auth_sdk's fixture, keyed on the
-# email. customer@demo.rokct.ai signs in the borrower role, the role the
-# Polaris home admits.
+# email. customer@demo.rokct.ai signs in the customer role. Polaris has no
+# role gate, so any role reaches the borrower home.
 app:
   name: Polaris
   tagline: Loans that are clear from the first step
