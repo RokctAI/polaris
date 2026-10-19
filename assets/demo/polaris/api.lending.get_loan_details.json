@@ -1,0 +1,23 @@
+{
+  "name": "LA-DEMO-0001",
+  "status": "Approved",
+  "applicant_type": "Customer",
+  "applicant": "CUST-DEMO-0001",
+  "applicant_name": "Demo Borrower",
+  "loan_product": "Personal Loan",
+  "loan_amount": 1500.0,
+  "currency": "ZAR",
+  "posting_date": "2026-09-01",
+  "rate_of_interest": 12.0,
+  "repayment_method": "Repay Over Number of Periods",
+  "repayment_periods": 3,
+  "repayment_amount": 560.0,
+  "total_payable_amount": 1680.0,
+  "total_payable_interest": 180.0,
+  "monthly_income": 12000.0,
+  "monthly_expenses": 4000.0,
+  "contract_status": "Pending",
+  "contract_responded_on": null,
+  "payout_requested_on": null,
+  "modified": "2026-09-02 10:00:00"
+}

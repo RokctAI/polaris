@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Neutral default. The composer replaces it with the home SDK's
+         manifest "app_name" (the same ownership as AppConstants.appTitle). -->
+    <string name="app_name">Juvo</string>
+    <string name="facebook_app_id">970186920356003</string>
+    <string name="fb_login_protocol_scheme">fb970186920356003</string>
+    <string name="facebook_client_token">58d8e6b7d30dc0da7e300162e8dca058</string>
+</resources>

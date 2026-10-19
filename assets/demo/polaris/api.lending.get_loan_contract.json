@@ -1,0 +1,8 @@
+{
+  "id": "LA-DEMO-0001",
+  "loan_application": "LA-DEMO-0001",
+  "title": "Loan Contract",
+  "content": "Loan Application: LA-DEMO-0001\nBorrower: Demo Borrower\nLoan product: Personal Loan\nPrincipal: 1500.00 ZAR\nInterest rate: 12.00%\nTotal repayable: 1680.00 ZAR\nRepayment periods: 3\nRepayment per period: 560.00",
+  "status": "Pending",
+  "created_at": "2026-09-02 10:00:00"
+}

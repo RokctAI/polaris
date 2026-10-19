@@ -1,0 +1,11 @@
+[
+  {
+    "name": "LA-DEMO-0001",
+    "status": "Approved",
+    "loan_product": "Personal Loan",
+    "loan_amount": 1500.0,
+    "applicant": "CUST-DEMO-0001",
+    "posting_date": "2026-09-01",
+    "modified": "$now_iso"
+  }
+]
