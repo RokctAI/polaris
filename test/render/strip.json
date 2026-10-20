@@ -1,0 +1,55 @@
+{
+  "title": "Borrower home - Polaris shell",
+  "kicker": "render-strip kit adoption - real render, demo data",
+  "lede": "Not hand-drawn. Both frames below are the actual PolarisHomeRouteView, the route the app opens after sign-in, hosting polaris_sdk's LoanScreen. Rendered headlessly to PNG at 390 logical px / dpr 3, with every numbered point placed automatically from the widget's measured rect.",
+  "fonts": "system",
+  "chips_default": true,
+  "frames": [
+    {
+      "section": "Shipped - what main renders today",
+      "caption": "borrower home - dark (app default)",
+      "status": "SHIPPED",
+      "png": "polaris_borrower_home_dark.png",
+      "rects": "polaris_borrower_home_dark.json",
+      "note": "polaris main, composed SDK set from composer.json"
+    },
+    {
+      "section": "Shipped - what main renders today",
+      "caption": "borrower home - light",
+      "status": "SHIPPED",
+      "png": "polaris_borrower_home_light.png",
+      "rects": "polaris_borrower_home_light.json",
+      "note": "polaris main, composed SDK set from composer.json"
+    }
+  ],
+  "labels": {
+    "polaris.loan_screen": "loan screen - borrower home (loan history, apply, status)",
+    "polaris.apply_card": "apply card - start a new loan application",
+    "polaris.loan_status_card": "loan status card - active or latest loan"
+  },
+  "numbering": {
+    "map": {
+      "polaris.apply_card": 1,
+      "polaris.loan_status_card": 2,
+      "polaris.loan_screen": 3
+    },
+    "retired": {}
+  },
+  "notes": [
+    {
+      "kicker": "note - how these renders were produced",
+      "body": [
+        "A widget-test harness (test/render/render_screen_test.dart); no app code touched. It pumps the real PolarisHomeRouteView, which initialises PolarisSDK itself in the demo session, and renders it at 390 logical px (dpr 3) at the full content height.",
+        "The data is the SDKs' own demo data. The test activates a demo session and the SDKs register their real repositories; base_sdk's DemoGatewayInterceptor answers them from polaris_sdk's and auth_sdk's own fixtures. The borrower is signed in through the real AuthRepositoryFacade.login.",
+        "Real fonts: Inter and Montserrat are the genuine files Google serves, committed under test/render/fonts/ and verified by google_fonts' own length and SHA-256 check. Remix and MaterialIcons come from the pub cache and the Flutter SDK cache."
+      ]
+    },
+    {
+      "kicker": "what these frames deliberately do NOT show",
+      "body": [
+        "Loan history is NOT seeded. The loans store is written by the device as applications are made, so a widget test starts empty and the frame shows the genuine fresh-device state.",
+        "The brand palette is not applied in this harness. Polaris has no applyAppBrandColors import wired into the harness yet, so colours are the AppStyle defaults."
+      ]
+    }
+  ]
+}
