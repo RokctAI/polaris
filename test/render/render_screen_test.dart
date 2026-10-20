@@ -105,7 +105,7 @@ const Size kDesignSize = Size(375, 812);
 // the feature SDKs), as main.dart's generated sdk-di block does.
 // ---------------------------------------------------------------------------
 
-/// TODO(harness) 2/8 - the SDK's own demo data. THIS IS THE MAIN PATH.
+/// Step 2/8 - the SDK's own demo data. THIS IS THE MAIN PATH.
 ///
 /// PolarisHomeRouteView registers polaris_sdk's own repository and fixture
 /// directory itself (in its initState), so this only registers the shared
@@ -121,26 +121,26 @@ Future<void> registerDemoDependencies() async {
   UsersSdkDependencies.register(getIt);
 }
 
-/// TODO(harness) 3/8 - EXCEPTION: device history the demo mode cannot supply.
+/// Step 3/8 - EXCEPTION: device history the demo mode cannot supply.
 ///
 /// EMPTY. The loan history and the in-flight application are stores the
 /// device accumulates through use; the first adoption takes the default path
 /// and renders the genuine fresh-device state.
 Future<void> seedDeviceHistory(WidgetTester tester) async {}
 
-/// TODO(harness) 4/8 - EXCEPTION: stub a service with no demo implementation.
+/// Step 4/8 - EXCEPTION: stub a service with no demo implementation.
 ///
 /// EMPTY. The polaris host route installs its own placeholder wallet bridge
 /// (_NoopPolarisWalletBridge) when a demo session starts, so nothing is stubbed.
 void registerExceptionStubs() {}
 
-/// TODO(harness) 5/8 - register sections / routes / gates.
+/// Step 5/8 - register sections / routes / gates.
 ///
 /// Nothing to register: the polaris home has no profile-style section
 /// registry. The route's own initState does the PolarisSDK wiring.
 void registerScreen() {}
 
-/// TODO(harness) 6/8 - the widget under test.
+/// Step 6/8 - the widget under test.
 ///
 /// The real host route in the real wrapping: ProviderScope, ScreenUtilInit at
 /// the app's design size, and a MaterialApp with the app's brightness.
@@ -161,7 +161,7 @@ Widget buildScreen({required bool dark}) {
   );
 }
 
-/// TODO(harness) 7/8 - the elements the review points at.
+/// Step 7/8 - the elements the review points at.
 ///
 /// `key` is the stable identity the composer binds a number to for the life
 /// of the page; the committed map lives in test/render/strip.json. The polaris
@@ -191,7 +191,7 @@ List<ElementSpec> elementSpecs() {
 }
 
 // ---------------------------------------------------------------------------
-// TODO(harness) 8/8 - real fonts.
+// Step 8/8 - real fonts.
 //
 // Without real faces every glyph renders as the Ahem/FlutterTest block font
 // and the PNG is worthless, so a missing face is a HARD FAILURE here.
