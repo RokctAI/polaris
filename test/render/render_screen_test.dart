@@ -172,8 +172,8 @@ List<ElementSpec> elementSpecs() {
     ElementSpec(
       key: 'polaris.loan_screen',
       label: 'Loan screen - borrower home (loan history, apply, status)',
-      finder: find.byWidgetPredicate(
-          (w) => w.runtimeType.toString() == 'LoanScreen'),
+      finder: find
+          .byWidgetPredicate((w) => w.runtimeType.toString() == 'LoanScreen'),
     ),
     ElementSpec(
       key: 'polaris.apply_card',
