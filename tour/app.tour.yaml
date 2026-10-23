@@ -15,6 +15,9 @@ app:
 video:
   hook: "Need a loan? See how simple it is."
   offer: "Apply in minutes."
+store:
+  # Play feature graphic hero: the filled-in affordability check - real numbers, the app's core hook.
+  feature_step: polaris_affordability
 setup:
   # Read by auth_sdk's demo_sign_in step.
   demo_email: customer@demo.rokct.ai
