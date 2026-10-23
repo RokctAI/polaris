@@ -49,3 +49,27 @@ out.
 ![Confirm your details](screenshots/07-polaris_details.png)
 
 Pass the check and your details arrive prefilled - confirm and continue.
+
+## 8. Four documents
+
+![Four documents](screenshots/08-polaris_documents.png)
+
+Add four documents - ID front and back, a bank statement and a selfie.
+
+## 9. Read the agreement
+
+![Read the agreement](screenshots/09-polaris_agreement.png)
+
+Every rand of cost is shown up front before you agree to anything.
+
+## 10. Approve DebiCheck
+
+![Approve DebiCheck](screenshots/10-polaris_consent.png)
+
+Approve the DebiCheck mandate, then submit. Nothing is paid out until you agree.
+
+## 11. Application in review
+
+![Application in review](screenshots/11-polaris_outcome.png)
+
+Submitted. We text you the moment there is a decision.

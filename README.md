@@ -15,8 +15,10 @@ tour run, so new screens appear here automatically.
 | ![Welcome][s01] | ![Auth Login][s02] | ![Auth Register][s03] |
 | **Auth Reset Password** | **Polaris Wizard** | **Polaris Affordability** |
 | ![Auth Reset Password][s04] | ![Polaris Wizard][s05] | ![Affordability][s06] |
-| **Polaris Details** | | |
-| ![Polaris Details][s07] | | |
+| **Polaris Details** | **Polaris Documents** | **Polaris Agreement** |
+| ![Polaris Details][s07] | ![Polaris Documents][s08] | ![Agreement][s09] |
+| **Polaris Consent** | **Polaris Outcome** | |
+| ![Polaris Consent][s10] | ![Polaris Outcome][s11] | |
 
 The full tour lives in the [feature guide](marketing/tour/feature-guide.md),
 with walkthrough videos alongside it in [`marketing/tour/`](marketing/tour).
@@ -28,6 +30,10 @@ with walkthrough videos alongside it in [`marketing/tour/`](marketing/tour).
 [s05]: marketing/tour/store/05-polaris_wizard.png
 [s06]: marketing/tour/store/06-polaris_affordability.png
 [s07]: marketing/tour/store/07-polaris_details.png
+[s08]: marketing/tour/store/08-polaris_documents.png
+[s09]: marketing/tour/store/09-polaris_agreement.png
+[s10]: marketing/tour/store/10-polaris_consent.png
+[s11]: marketing/tour/store/11-polaris_outcome.png
 <!-- @generated-tour-gallery-end -->
 
 <!-- @generated-render-strip-start -->
