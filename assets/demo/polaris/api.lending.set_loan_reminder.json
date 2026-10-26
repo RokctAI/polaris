@@ -1,0 +1,13 @@
+{
+  "name": "LA-DEMO-0001",
+  "loan": "LOAN-DEMO-0001",
+  "remind_day_before": {
+    "$demo_select": {
+      "by": "payload.remind_day_before",
+      "cases": {"0": false, "1": true},
+      "default": true
+    }
+  },
+  "due_date": "$today+30d",
+  "remind_on": "$today+29d"
+}
