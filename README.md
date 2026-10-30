@@ -23,17 +23,17 @@ tour run, so new screens appear here automatically.
 The full tour lives in the [feature guide](marketing/tour/feature-guide.md),
 with walkthrough videos alongside it in [`marketing/tour/`](marketing/tour).
 
-[s01]: marketing/tour/screenshots/01-welcome.png
-[s02]: marketing/tour/screenshots/02-auth_login.png
-[s03]: marketing/tour/screenshots/03-auth_register.png
-[s04]: marketing/tour/screenshots/04-auth_reset_password.png
-[s05]: marketing/tour/screenshots/05-polaris_wizard.png
-[s06]: marketing/tour/screenshots/06-polaris_affordability.png
-[s07]: marketing/tour/screenshots/07-polaris_details.png
-[s08]: marketing/tour/screenshots/08-polaris_documents.png
-[s09]: marketing/tour/screenshots/09-polaris_agreement.png
-[s10]: marketing/tour/screenshots/10-polaris_consent.png
-[s11]: marketing/tour/screenshots/11-polaris_outcome.png
+[s01]: marketing/tour/store/01-welcome.png
+[s02]: marketing/tour/store/02-auth_login.png
+[s03]: marketing/tour/store/03-auth_register.png
+[s04]: marketing/tour/store/04-auth_reset_password.png
+[s05]: marketing/tour/store/05-polaris_wizard.png
+[s06]: marketing/tour/store/06-polaris_affordability.png
+[s07]: marketing/tour/store/07-polaris_details.png
+[s08]: marketing/tour/store/08-polaris_documents.png
+[s09]: marketing/tour/store/09-polaris_agreement.png
+[s10]: marketing/tour/store/10-polaris_consent.png
+[s11]: marketing/tour/store/11-polaris_outcome.png
 <!-- @generated-tour-gallery-end -->
 
 <!-- @generated-render-strip-start -->
