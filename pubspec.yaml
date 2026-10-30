@@ -203,17 +203,25 @@ flutter:
     - assets/images/splash.png  # Add this line to explicitly include splash.png
     - assets/images/splash1.png
     - assets/images/splash2.png
+# Polaris brand (pine #0B1F1A, ember P on a horizon line). splash*.png and the
+# android/ res images are rendered from the approved design; these blocks keep
+# the generators pointed at the same art if anyone re-runs them.
 flutter_native_splash:
   background_image: 'assets/images/splash2.png'
   fullscreen: true
   android: true
   ios: true
+  android_12:
+    color: '#0B1F1A'
 
 flutter_icons:
   android: true
   ios: true
   remove_alpha_ios: true
-  image_path: 'assets/images/app_logo.png'
+  image_path: 'assets/images/launcher_icon.png'
+  adaptive_icon_background: '#0B1F1A'
+  adaptive_icon_foreground: 'assets/images/launcher_icon_foreground.png'
+  adaptive_icon_monochrome: 'assets/images/launcher_icon_monochrome.png'
 
 # Feature SDK pubspecs point at ../base (the composed-app cache layout).
 # When paas_customer itself is the resolution root against sibling repos,
