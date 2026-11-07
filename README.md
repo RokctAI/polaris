@@ -13,12 +13,14 @@ tour run, so new screens appear here automatically.
 | Welcome | Auth Login | Auth Register |
 | :---: | :---: | :---: |
 | ![Welcome][s01] | ![Auth Login][s02] | ![Auth Register][s03] |
-| **Auth Reset Password** | **Polaris Wizard** | **Polaris Affordability** |
-| ![Auth Reset Password][s04] | ![Polaris Wizard][s05] | ![Affordability][s06] |
-| **Polaris Details** | **Polaris Documents** | **Polaris Agreement** |
-| ![Polaris Details][s07] | ![Polaris Documents][s08] | ![Agreement][s09] |
-| **Polaris Consent** | **Polaris Outcome** | |
-| ![Polaris Consent][s10] | ![Polaris Outcome][s11] | |
+| **Auth Reset Password** | **Polaris Home** | **Polaris Wizard** |
+| ![Auth Reset Password][s04] | ![Polaris Home][s05] | ![Polaris Wizard][s06] |
+| **Polaris Affordability** | **Polaris Details** | **Polaris Documents** |
+| ![Affordability][s07] | ![Polaris Details][s08] | ![Polaris Documents][s09] |
+| **Polaris Agreement** | **Polaris Consent** | **Polaris Outcome** |
+| ![Agreement][s10] | ![Polaris Consent][s11] | ![Polaris Outcome][s12] |
+| **Polaris History** | **Polaris Profile** | |
+| ![Polaris History][s13] | ![Polaris Profile][s14] | |
 
 The full tour lives in the [feature guide](marketing/tour/feature-guide.md),
 with walkthrough videos alongside it in [`marketing/tour/`](marketing/tour).
@@ -27,13 +29,16 @@ with walkthrough videos alongside it in [`marketing/tour/`](marketing/tour).
 [s02]: marketing/tour/store/02-auth_login.png
 [s03]: marketing/tour/store/03-auth_register.png
 [s04]: marketing/tour/store/04-auth_reset_password.png
-[s05]: marketing/tour/store/05-polaris_wizard.png
-[s06]: marketing/tour/store/06-polaris_affordability.png
-[s07]: marketing/tour/store/07-polaris_details.png
-[s08]: marketing/tour/store/08-polaris_documents.png
-[s09]: marketing/tour/store/09-polaris_agreement.png
-[s10]: marketing/tour/store/10-polaris_consent.png
-[s11]: marketing/tour/store/11-polaris_outcome.png
+[s05]: marketing/tour/store/05-polaris_home.png
+[s06]: marketing/tour/store/06-polaris_wizard.png
+[s07]: marketing/tour/store/07-polaris_affordability.png
+[s08]: marketing/tour/store/08-polaris_details.png
+[s09]: marketing/tour/store/09-polaris_documents.png
+[s10]: marketing/tour/store/10-polaris_agreement.png
+[s11]: marketing/tour/store/11-polaris_consent.png
+[s12]: marketing/tour/store/12-polaris_outcome.png
+[s13]: marketing/tour/store/13-polaris_history.png
+[s14]: marketing/tour/store/14-polaris_profile.png
 <!-- @generated-tour-gallery-end -->
 
 <!-- @generated-render-strip-start -->

@@ -30,46 +30,64 @@ New to Polaris? Create your account in a few easy steps.
 
 Forgot your password? Polaris gets you back in with a secure reset.
 
-## 5. Apply in minutes
+## 5. Borrow, and see your loan
 
-![Apply in minutes](screenshots/05-polaris_wizard.png)
+![Borrow, and see your loan](screenshots/05-polaris_home.png)
+
+Home shows what you can borrow, your current loan and what to have ready.
+
+## 6. Apply in minutes
+
+![Apply in minutes](screenshots/06-polaris_wizard.png)
 
 Need a loan? Polaris walks you through six clear steps - no branch, no
 paperwork.
 
-## 6. Affordability first
+## 7. Affordability first
 
-![Affordability first](screenshots/06-polaris_affordability.png)
+![Affordability first](screenshots/07-polaris_affordability.png)
 
 An honest affordability check comes before anything else - income in, answer
 out.
 
-## 7. Confirm your details
+## 8. Confirm your details
 
-![Confirm your details](screenshots/07-polaris_details.png)
+![Confirm your details](screenshots/08-polaris_details.png)
 
 Pass the check and your details arrive prefilled - confirm and continue.
 
-## 8. Four documents
+## 9. Four documents
 
-![Four documents](screenshots/08-polaris_documents.png)
+![Four documents](screenshots/09-polaris_documents.png)
 
 Add four documents - ID front and back, a bank statement and a selfie.
 
-## 9. Read the agreement
+## 10. Read the agreement
 
-![Read the agreement](screenshots/09-polaris_agreement.png)
+![Read the agreement](screenshots/10-polaris_agreement.png)
 
 Every rand of cost is shown up front before you agree to anything.
 
-## 10. Approve DebiCheck
+## 11. Approve DebiCheck
 
-![Approve DebiCheck](screenshots/10-polaris_consent.png)
+![Approve DebiCheck](screenshots/11-polaris_consent.png)
 
 Approve the DebiCheck mandate, then submit. Nothing is paid out until you agree.
 
-## 11. Application in review
+## 12. Application in review
 
-![Application in review](screenshots/11-polaris_outcome.png)
+![Application in review](screenshots/12-polaris_outcome.png)
 
 Submitted. We text you the moment there is a decision.
+
+## 13. Every loan in one place
+
+![Every loan in one place](screenshots/13-polaris_history.png)
+
+History lists every loan - pick one to see what was paid out and repaid.
+
+## 14. Your profile
+
+![Your profile](screenshots/14-polaris_profile.png)
+
+Your profile and settings, one tap away in the same nav.
