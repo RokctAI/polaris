@@ -1,20 +1,28 @@
 # polaris
 
-A lender's loan app for borrowers on phone and desktop: apply, send documents, accept the contract and follow the loan.
+A lender's loan app for borrowers on phone and desktop: apply, send documents,
+accept the contract and follow the loan.
 
 <!-- @generated-store-description-start -->
 Polaris is a loan you can understand. Before you apply, see the most a short-term loan can cost under the National Credit Act: interest, the initiation fee, the monthly service fee, the VAT on them, and credit life cover if you take it, each one under the ceiling the Act sets. Every rand of the cost is shown before you agree to anything.
 
-Apply in six clear steps, with no branch and no paperwork. An honest affordability check comes first: your income in, the answer out. Pass it and your details arrive prefilled, so you only confirm them. Then add four documents: your ID front and back, a bank statement and a selfie.
+Apply in six clear steps, with no branch and no paperwork. An honest
+affordability check comes first: your income in, the answer out. Pass it and
+your details arrive prefilled, so you only confirm them. Then add four
+documents: your ID front and back, a bank statement and a selfie.
 
-Read the agreement in the app, then approve the DebiCheck mandate and submit. Nothing is paid out until you agree. We text you the moment there is a decision.
+Read the agreement in the app, then approve the DebiCheck mandate and submit.
+Nothing is paid out until you agree. We text you the moment there is a decision.
 
-Every loan lives in one place: see what was paid out and what has been repaid, and keep your profile and settings one tap away.
+Every loan lives in one place: see what was paid out and what has been repaid,
+and keep your profile and settings one tap away.
 
-Short-term loans under the National Credit Act are capped at R8 000 and repaid within six months. Polaris works inside those limits.
-<!-- @generated-store-description-end -->
+Short-term loans under the National Credit Act are capped at R8 000 and repaid
+within six months. Polaris works inside those limits. <!--
+@generated-store-description-end -->
 
-Spawned by [RokctAI Factory](https://github.com/rokctai/factory) from <https://github.com/RokctAI/factory/issues/38>.
+Spawned by [RokctAI Factory](https://github.com/rokctai/factory) from
+<https://github.com/RokctAI/factory/issues/38>.
 
 <!-- @generated-tour-gallery-start -->
 ## App tour
