@@ -39,7 +39,10 @@ add_definitions(-DUNICODE -D_UNICODE)
 # of modifying this function.
 function(APPLY_STANDARD_SETTINGS TARGET)
   target_compile_features(${TARGET} PUBLIC cxx_std_17)
-  target_compile_options(${TARGET} PRIVATE /W4 /WX /wd"4100")
+  # C4238 (nonstandard extension: class rvalue used as lvalue) is raised by
+  # third-party plugins such as firebase_auth. With /WX it becomes C2220 and
+  # fails the build, so it is disabled here; /WX stays for everything else.
+  target_compile_options(${TARGET} PRIVATE /W4 /WX /wd"4100" /wd"4238")
   target_compile_options(${TARGET} PRIVATE /EHsc)
   target_compile_definitions(${TARGET} PRIVATE "_HAS_EXCEPTIONS=0")
   target_compile_definitions(${TARGET} PRIVATE "$<$<CONFIG:Debug>:_DEBUG>")
